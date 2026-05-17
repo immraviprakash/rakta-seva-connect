@@ -1,232 +1,114 @@
 # 🩸 Rakta-Seva Connect
 
-> A modern real-time blood donation and emergency coordination platform built using Kotlin, Jetpack Compose, Firebase, and Gemini AI.
+Rakta-Seva Connect is a modern AI-powered blood donation and emergency request platform built using **Kotlin + Jetpack Compose**.
+
+The application helps users quickly connect with blood donors during critical situations through real-time emergency requests, donor discovery, and AI-assisted urgent message generation.
 
 ---
 
-## 📌 Overview
+## ✨ Features
 
-Rakta-Seva Connect is an Android-based healthcare coordination application designed to help users quickly connect with compatible blood donors during emergencies.
+### 🚨 Emergency Blood Requests
 
-The application focuses on:
+* Post urgent blood requests instantly
+* Specify blood group, hospital, units required, and urgency level
+* AI-generated emergency messages based on request context
 
-* Real-time emergency blood request coordination
-* Smart donor discovery
-* Instant request acceptance workflows
-* Modern responsive UI/UX
-* AI-powered assistance and message generation
-* Reliable Firebase-backed synchronization
+### 🧑‍🤝‍🧑 Smart Donor Discovery
 
-The platform was developed as a production-style internship project using modern Android development practices.
+* Search donors by name or blood group
+* Eligibility and compatibility filtering
+* Auto-matched compatible donors
 
----
+### 🤖 AI Integration
 
-# ✨ Features
+Powered using **Groq AI API**
 
-## 🚨 Emergency Blood Request System
+* AI chatbot assistance
+* Emergency message generation
+* Context-aware healthcare communication
 
-* Create emergency blood requests instantly
-* Real-time request updates using Firestore listeners
-* Live donor response tracking
-* Request cancellation and archive support
-* Optimistic UI updates for smooth interactions
+### 🎨 Modern UI/UX
 
-## 🩸 Donor Discovery
+* Material 3 design system
+* Dynamic Light/Dark mode
+* Responsive spacing and typography
+* Premium Compose-based interface
 
-* Find compatible blood donors
-* Blood group filtering
-* Eligibility tracking
-* Privacy-safe contact sharing
-* Realtime donor coordination
+### 🔐 Authentication & Backend
 
-## 🔔 Live Notification System
-
-* Instant acceptance notifications
-* Realtime alert synchronization
-* Read/unread state tracking
-* Notification persistence
-
-## 🤖 Gemini AI Integration
-
-* AI Chat Assistant
-* AI-powered emergency message generation
-* Natural conversational responses
-* Google Gemini API integration
-
-## 🎨 Modern UI/UX
-
-* Jetpack Compose + Material 3
-* Adaptive Light/Dark/System themes
-* Discord-inspired dark mode palette
-* Responsive layouts
-* Smooth Compose animations
-* Adaptive launcher icons and splash screen
-
-## ⚡ Performance & Stability
-
-* Stable Compose state management
-* Optimized recompositions
-* Firebase realtime synchronization
-* Lifecycle-safe listeners
-* Clean architecture practices
+* Firebase Authentication
+* Firebase Firestore integration
+* Persistent local user state
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-| Category       | Technology                        |
-| -------------- | --------------------------------- |
-| Language       | Kotlin                            |
-| UI Framework   | Jetpack Compose                   |
-| Design System  | Material 3                        |
-| Backend        | Firebase                          |
-| Authentication | Firebase Auth                     |
-| Database       | Firebase Firestore                |
-| AI Integration | Google Gemini API                 |
-| Image Loading  | Coil                              |
-| Architecture   | Compose State + Firebase Realtime |
-| IDE            | Android Studio                    |
+* Kotlin
+* Jetpack Compose
+* Material 3
+* Firebase Authentication
+* Firebase Firestore
+* Groq AI API
+* Retrofit
+* Android SDK
+* Git & GitHub
 
 ---
 
-# 📱 Application Screens
+## 📱 Screens Included
 
-* Splash / Welcome Screen
-* Authentication System
-* Home Dashboard
-* Emergency Requests
+* Splash Screen
+* Authentication Flow
+* Emergency Dashboard
 * Donor Discovery
-* Notifications
-* User Profile
-* Settings & Theme Control
+* Requests Management
+* Notifications & Alerts
 * AI Chat Assistant
-* AI Message Generator
+* AI Emergency Message Generator
+* Profile & Settings
 
 ---
 
-# 🔄 Realtime Coordination Workflow
+## ⚡ AI-Powered Emergency Assistance
 
-Rakta-Seva Connect uses Firebase Firestore realtime snapshot listeners to synchronize emergency coordination across users instantly.
+One of the core features of Rakta-Seva Connect is its AI-assisted emergency response generation system.
 
-### Flow:
+Based on:
 
-1. User creates emergency request
-2. Compatible donors receive live request updates
-3. Donor accepts request
-4. Requester receives realtime notification
-5. Contact coordination begins securely
-6. Request state updates instantly across devices
+* blood group
+* urgency level
+* hospital details
+* units required
 
----
-
-# 🧠 AI Features
-
-The application integrates Google Gemini AI to assist users with:
-
-* Emergency response assistance
-* Smart blood request message generation
-* Conversational healthcare guidance
-* Natural language interaction
-
-The AI system is implemented securely using BuildConfig-based API key injection and GitHub-safe local configuration handling.
+the AI automatically generates a structured emergency request message to improve communication speed during critical medical situations.
 
 ---
 
-# 🔐 Security & Privacy
+## 🚀 Build Status
 
-* API keys excluded from Git tracking
-* Secure local configuration management
-* Privacy-safe donor contact visibility
-* Firebase-backed authentication
-* Lifecycle-safe realtime listeners
-
----
-
-# 🌗 Theme System
-
-The app supports:
-
-* Light Mode
-* Dark Mode
-* Follow System Mode
-
-Theme preferences persist automatically and dynamically react to device theme changes.
+✅ Production Release Build Generated
+✅ Signed APK Generated
+✅ Groq AI Integration Completed
+✅ Material 3 UI Refinement Completed
 
 ---
 
-# 🚀 Setup Instructions
+## 📦 APK Release
 
-## 1. Clone Repository
-
-```bash
-git clone <your-repository-url>
-```
-
-## 2. Open in Android Studio
-
-Open the project folder in Android Studio.
-
-## 3. Configure Firebase
-
-* Add your `google-services.json`
-* Enable Firebase Authentication
-* Enable Firebase Firestore
-
-## 4. Configure Gemini API
-
-Add your Gemini API key inside `local.properties`:
-
-```properties
-GEMINI_API_KEY=YOUR_API_KEY_HERE
-```
-
-## 5. Build Project
-
-```bash
-./gradlew assembleDebug
-```
+Release APK available in the project releases section.
 
 ---
 
-# 📦 Release Build
-
-To generate a release APK:
-
-```bash
-Build → Generate Signed Bundle / APK
-```
-
----
-
-# 📈 Future Improvements
-
-Potential future enhancements:
-
-* Push notification integration
-* Hospital verification system
-* GPS-based donor radius filtering
-* Blood donation history tracking
-* Cloud Functions automation
-* Advanced AI healthcare assistance
-* Admin dashboard
-* Multi-language support
-
----
-
-# 👨‍💻 Developer
+## 👨‍💻 Developer
 
 **Ravi Prakash K**
 
-Android Developer | UI/UX Enthusiast | Firebase & Compose Developer
+Built as part of an Android development internship project focused on solving real-world emergency healthcare communication problems.
 
 ---
 
-# 📄 License
+## 📌 Note
 
-This project was developed for educational, internship, and portfolio purposes.
-
----
-
-# ❤️ Rakta-Seva Connect
-
-> Connecting donors. Saving lives.
+This project is currently intended for educational and demonstration purposes.
